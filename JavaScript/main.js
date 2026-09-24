@@ -1,5 +1,5 @@
 /*----------------------LLAMAR A NAVBAR-----------------------*/
-fetch('/pages/nav.html')
+fetch('../pages/nav.html')
     .then(response => response.text())
     .then(data => {
         const navbar = document.getElementById('navbar');
@@ -10,7 +10,7 @@ fetch('/pages/nav.html')
     });
 
 /*----------------------LLAMAR A FOOTER-----------------------*/
-fetch('/pages/footer.html')
+fetch('../pages/footer.html')
     .then(response => response.text())
     .then(data => {
         const footer = document.getElementById('footer');
@@ -18,7 +18,7 @@ fetch('/pages/footer.html')
     });
 
 /*----------------------LLAMAR INICIO------------------------*/
-fetch('/pages/inicio.html')
+fetch('../pages/inicio.html')
     .then(response => response.text())
     .then(data => {
         const inicio = document.getElementById('inicio');
