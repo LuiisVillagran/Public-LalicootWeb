@@ -1,0 +1,175 @@
+
+/*-----STYLE BASIC PAGE-------*/
+
+/* Fondo Color*/
+.body-color{
+  width: 100%;
+  background-image: url(/img/general/background-white.png);
+  background-attachment: fixed;
+  background-size: fixed;
+}
+
+
+/*---------TIPOGRAFIAS----------*/
+/* Tipografía Poppins */
+@font-face {
+  font-family: 'tipoPoppinslight';
+  src: url('/config/tipografias/Poppins/Poppins-Light.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'tipoPoppinsitalic';
+  src: url('/config/tipografias/Poppins/Poppins-Italic.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'tipoPoppinsbold';
+  src: url('/config/tipografias/Poppins/Poppins-Bold.ttf') format('woff');
+}
+
+.tipo-poppinslight {
+  font-family: 'tipoPoppinslight', sans-serif;
+}
+.tipo-poppinsitalic {
+  font-family: 'tipoPoppinsitalic', sans-serif;
+}
+.tipo-poppins {
+  font-family: 'tipoPoppinsbold', sans-serif;
+}
+
+/* Tipografía Teneorite */
+
+@font-face {
+  font-family: 'tipoTeneorite';
+  src: url('config/tipografias/teneorite/teneorite.ttf') format('woff');
+}
+
+.tipo-teneorite {
+  font-family: 'tipoTeneorite', sans-serif;
+}
+
+
+
+/*----------STYLE NAV----------*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+.style-navbar {
+  z-index: 90;
+}
+
+.img-logovar {
+  width: 50px;
+  height: 60px;
+  object-fit: cover;
+  margin: 3px;
+}
+
+/* Realce del enlace activo y al pasar el cursor */
+.style-navbar .nav-link {
+  transition: color 0.2s ease;
+  position: relative;
+}
+.style-navbar .nav-link:hover:not(.disabled),
+.style-navbar .nav-link.active {
+  color: var(--bs-danger) !important;
+}
+
+/*-------STYLE FOOTER--------*/
+.img-footer{
+  background-image: url('/img/general/BannerLalicoot.png');
+  background-color: #292929;
+  background-blend-mode: multiply;
+  display: flex;
+  background-size: cover;
+  image-orientation: from-image;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.footer{
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-social__icon {
+  width: 50px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social__icon:hover,
+.footer-social a:focus-visible .footer-social__icon {
+  transform: translateY(-3px) scale(1.08);
+  opacity: 0.85;
+}
+
+/*------DISEÑO CARTA--------*/
+.carta-bootstrap{
+  margin: 30px;
+  overflow: hidden;
+  cursor: default;
+  transition: all 400ms ease;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 8px #d7d7d7;
+  transform: translateY(-3px);
+  justify-content: center;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.carta-bootstrap:hover{
+  box-shadow: 5px 5px 8px #888888;
+  transform: translateY(-6px);
+}
+
+
+/*-----------------------ANIMACIONES CSS-----------------------*/
+
+
+.slide-in-left {
+  font-size: 3em;
+  text-align: center;
+  position: relative; /* Necesario para la animación de desplazamiento */
+  left: -100%; /* Comienza fuera del área visible de la pantalla */
+  animation: slideFromLeft 2s ease forwards; /* Nombre de la animación, duración y tipo de timing */
+}
+
+@keyframes slideFromLeft {
+  to {
+      left: 0; /* Se desplaza hacia la derecha hasta su posición original */
+  }
+}
+
+.fade-in {
+  font-size: 3em;
+  opacity: 0; /* Inicia completamente transparente */
+  animation: fadeInAnimation 2s ease forwards; /* Duración y tipo de timing */
+}
+
+@keyframes fadeInAnimation {
+  to {
+      opacity: 1; /* Se desvanece gradualmente a completamente visible */
+  }
+}
+
+
+.slide-down {
+  position: relative;
+  top: -100%; /* Comienza fuera del área visible de la pantalla */
+  animation: slideDownAnimation 1s ease forwards; /* Duración y tipo de timing */
+}
+
+@keyframes slideDownAnimation {
+  to {
+      top: 0; /* Se desplaza hacia abajo hasta su posición original */
+  }
+}
