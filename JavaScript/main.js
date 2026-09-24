@@ -52,5 +52,5 @@ $(document).ready(function(){
 
 
 function openPDF() {
-    window.open('/img/pdfs/TableroPrecios.pdf', '_blank'); // Reemplaza 'ruta/al/archivo.pdf' con la ruta correcta del archivo
+    window.open('../img/pdfs/TableroPrecios.pdf', '_blank'); // Reemplaza 'ruta/al/archivo.pdf' con la ruta correcta del archivo
 }
